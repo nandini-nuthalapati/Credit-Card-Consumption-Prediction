@@ -56,4 +56,4 @@ Submissions are evaluated on Root Mean Squared Logarithmic Error(RMSLE) between 
 ### Approach
 At first, I conducted exploratory data analysis of the dataset to gain a deeper understanding of the data. Next, I did feature engineering to create new variables.Then I tried some scikit-learn models out of which XGBoost and Random Forest gave good RMSLE. In the end I created a stacked model of those two with Linear Regression and it has been selected as the final model. 
 
-RMSLE: 115.02
+### RMSLE: 115.02
