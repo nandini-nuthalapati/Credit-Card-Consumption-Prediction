@@ -49,3 +49,11 @@ Understanding the consumption pattern for credit cards at an individual consumer
 * loan_enq Loan enquiry in last 3 months (Y or N)
 * emi_active Monthly EMI paid to other bank for active loans
 * cc_cons (Target) Average Credit Card Spend in next three months
+
+### Evaluation Metric
+Submissions are evaluated on Root Mean Squared Logarithmic Error(RMSLE) between the predicted credit card consumption and the observed target.
+
+### Approach
+At first, I conducted exploratory data analysis of the dataset to gain a deeper understanding of the data. Next, I did feature engineering to create new variables.Then I tried some scikit-learn models out of which XGBoost and Random Forest gave good RMSLE. In the end I created a stacked model of those two with Linear Regression and it has been selected as the final model. 
+
+RMSLE: 115.02
